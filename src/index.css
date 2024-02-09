@@ -23,4 +23,17 @@ code {
 .lg-header{
   height: 84px;
 }
+.swiper-button-prev{
+  top: 500px !important;
+  left: 120px !important;
+  
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+  color:white;
+  height: 10px !important;
+}
 
+.swiper-button-next{
+  top: 500px !important;
+  left: 200px !important;
+}
