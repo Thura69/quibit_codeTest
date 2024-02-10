@@ -115,27 +115,10 @@ export const Icons:IconsType = {
       ><rect width="4" height="16" x="6" y="4"/><rect width="4" height="16" x="14" y="4"/></svg>  
     ),
     hanaNetwork: (props: LucideProps) => (
-        <svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-    <defs>
-        <clipPath id="g7pcyiaj8a">
-            <path data-name="사각형 7"  fill="#ffffff"  d="M0 0h22.4v22.4H0z"/>
-        </clipPath>
-    </defs>
-    <g data-name="그룹 26">
-        <path data-name="30 Bonding box" d="M0 0h30v30H0z" fill="none" />
-        <g data-name="그룹 25">
-            <path data-name="패스 13" d="M15.4 15.4V7h-1.867v3.267H8.867V7H7v8.4h1.867v-3.266h4.666V15.4z" fill="#ffffff" transform="translate(4 4)"/>
-            <g data-name="그룹 23">
-                <g data-name="그룹 22" clipPath='url(#g7pcyiaj8a)'  transform="translate(4 4)">
-                    <path data-name="패스 14" d="M1.723 17.015V1.723H16.8V0H1.723A1.725 1.725 0 0 0 0 1.723v15.293h1.723z" fill="#ffffff"/>
-                    <path data-name="패스 15" d="M20.677 20.677H5.6V22.4h15.077a1.726 1.726 0 0 0 1.723-1.723V6.318h-1.723z" fill="#ffffff"/>
-                    <path data-name="패스 16" d="M21 2.8a1.4 1.4 0 1 0-1.4-1.4A1.4 1.4 0 0 0 21 2.8" fill="#ffffff"/>
-                    <path data-name="패스 17" d="M1.4 19.6A1.4 1.4 0 1 0 2.8 21a1.4 1.4 0 0 0-1.4-1.4" fill="#ffffff"/>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+        <svg 
+        {...props}
+        xmlns="http://www.w3.org/2000/svg" 
+        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
     )
 }
  

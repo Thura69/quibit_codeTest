@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-function Container() {
+function Container({children}:{children:ReactNode}) {
   return (
-    <div>Container</div>
+      <div className='px-[20px] relative lg:px-[20px] xl:px-0  z-[60]  max-w-[1200px]  mx-auto'>{children}</div>
   )
 }
 

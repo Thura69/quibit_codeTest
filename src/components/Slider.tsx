@@ -12,7 +12,7 @@ import SlideCard from './theme/swiper/SlideCard';
 import { swiper } from '../assets/data/swiper';
 import { Icons } from '../libs/icons/icons';
 import AutoControl from './theme/swiper/AutoControl';
-import { icons } from 'lucide-react';
+import Container from './theme/Container';
 function Slider() {
 
     const [number, setNumber] = useState(1);
@@ -37,22 +37,22 @@ function Slider() {
     {/* swiperSlideCards */}
     {
     swiper.map((e)=>(
-        
     <SwiperSlide key={e.id}>
     <SlideCard Banner={e.Banner} BannerContant={e.BannerContant} BannerLarge={e.BannerLarge} />
     </SwiperSlide>
-    
     ))
     }
    
   
 
-   <div className='ml-[20px] lg:ml-[40px] xl:ml-[110px] absolute bottom-[100px]  z-50 bg-[#0000004d] text-white px-[10px] justify-around items-center h-[32px] w-[120px] rounded-full flex'>
+  <Container>
+    <div className='ml-[20px] lg:ml-0   absolute bottom-[100px]  z-50 bg-[#0000004d] text-white px-[10px] justify-around items-center h-[32px] w-[120px] rounded-full flex'>
     <AutoControl stop={Icons.stop} start={Icons.play}/>
     <SlidePrevButton icon={Icons.chevronLeft}/>
      <p className=' font-extrabold text-xs'>{number} <span className=' text-gray-400'> / 2</span></p>
     <SlideNextButton icon={Icons.chevronRight}/>
    </div>
+  </Container>
    
    
     </Swiper>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { slideCardProps } from '../../../types/slidecard'
+import Container from '../Container'
 
 const SlideCard:React.FC<slideCardProps> = ({Banner,BannerContant,BannerLarge})=> {
   return (
@@ -17,7 +18,13 @@ const SlideCard:React.FC<slideCardProps> = ({Banner,BannerContant,BannerLarge})=
         </picture>
         {/* forLarge */}
         
-              <img className='absolute ml-[20px] lg:ml-[40px] xl:ml-[110px] lg:w-[612px] w-[315px] lg:h-[300px] h-[155px] top-[95px] xl:top-[120px] left-0' src={BannerContant} alt='banner_contant'/>
+       <div className=' w-full mx-auto absolute top-[100px] left-0 right-0  ml-[20px]   '>
+           <Container>
+             <img className='lg:w-[612px] w-[315px] lg:h-[300px] h-[155px]  left-0' src={BannerContant} alt='banner_contant'/>
+           </Container>
+       </div>
+       
+      
         </div>
   )
 }
