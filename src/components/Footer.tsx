@@ -14,7 +14,7 @@ function Footer() {
              <div>
             <h3 className=' text-xl space-y-5 font-bold flex flex-col lg:text-4xl text-white'><span>변화를 주도하는 </span><span>글로벌 인재를 기다립니다</span></h3>
         </div>
-        <div className='flex lg:w-auto lg:flex-col w-full flex-row lg:space-y-5'>
+        <div className='flex lg:w-auto lg:flex-col gap-3 w-full flex-row lg:space-y-5'>
             <button className='flex w-full lg:w-auto hover:bg-[#d8d8d8] duration-300 bg-[#f2f2f2] justify-between items-center gap-4 text-[#222222] font-bold p-3 px-4  text-lg rounded-full'>
             <span  className='lg:hidden'>인재상</span>
             <span className='hidden lg:block'>인재상알아보기</span>

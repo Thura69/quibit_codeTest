@@ -6,7 +6,7 @@ import { mainCardProps } from '../../types/maincard';
 const MainCard:React.FC<mainCardProps> = ({id,title,firstSubTit,secSubTit,firstDes,secDes,img,stock,unit,icon:Icon})=> {
 
   return (
-    <div className={`w-full   drop-shadow-2xl relative mx-auto h-[280px]   rounded-lg ${ stock ? 'bg-[#EEFBF7]':'bg-white'} ${id===1?'  rounded-r-none rounded-b-r-none ':''} ${id ===2 ? ' border-l-[0.5px]  lg:border-t-0 lg:rounded-r-lg border-t-[0.5px]  drop-shadow-none  rounded-t-none rounded-b-none  lg:rounded-l-none':''} ${id ===3 && 'lg:ml-[30px] border-t-[0.5px] lg:border-t-0 lg:rounded-t-lg  rounded-t-none'}`}>
+    <div className={`w-full   drop-shadow-2xl relative mx-auto h-[280px]   rounded-lg ${ stock ? 'bg-[#EEFBF7]':'bg-white'} ${id===1?'  rounded-r-none rounded-t-lg lg:rounded-l-lg lg:rounded-r-none   rounded-b-none ':''} ${id ===2 ? ' border-l-[0.5px]  lg:border-t-0 lg:rounded-r-lg border-t-[0.5px]  drop-shadow-none  rounded-t-none rounded-b-none  lg:rounded-l-none':''} ${id ===3 && 'lg:ml-[30px] border-t-[0.5px] lg:border-t-0 lg:rounded-t-lg  rounded-t-none'}`}>
     <div className='flex px-7 justify-between  items-center  h-[60px]'>
         <p className='font-bold'>{title}</p>
         <ChevronRight color="#000000" />
@@ -15,7 +15,7 @@ const MainCard:React.FC<mainCardProps> = ({id,title,firstSubTit,secSubTit,firstD
       !Icon &&   <hr className='border-gray-300/40'/>
     }
    
-    <div className='px-7  flex flex-col  justify-around lg:justify-around lg:py-0 py-[20px] h-[220px]'>
+    <div className={`px-7  flex flex-col ${Icon?"justify-around":'justify-start'} lg:justify-around lg:py-0 py-[20px] h-[220px]`}>
         <h3 className=' font-extrabold text-xl'>{firstSubTit}<br />
           
         {/* For Stock Card */}
@@ -28,7 +28,7 @@ const MainCard:React.FC<mainCardProps> = ({id,title,firstSubTit,secSubTit,firstD
         {/* For Button Card */}
         {
           Icon ?
-            <div className=' space-y-2 lg:space-y-0 gap-2 md:flex  justify-between items-center lg:flex-col lg:justify-start lg:items-start'>
+            <div className=' space-y-2  lg:space-y-0 gap-2 md:flex  justify-between items-center lg:flex-col lg:justify-start lg:items-start'>
             <button className='flex w-full lg:w-auto hover:bg-[rgb(216,216,216)] duration-300 bg-[#f2f2f2] justify-center items-center gap-2 text-[#222222] font-bold px-4 py-2  text-sm rounded-full'>{firstDes} <ArrowDownToLine className='w-4 h-4' color="#000000" /></button>
             <button className='flex w-full lg:w-auto hover:bg-[#d8d8d8] duration-300 bg-[#f2f2f2] justify-center items-center gap-2 text-[#222222] font-bold px-4 py-2  text-sm rounded-full'>{secDes} <Icon className="w-4 h-4"  /></button>
             </div>
